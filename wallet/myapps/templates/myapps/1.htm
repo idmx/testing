@@ -1,0 +1,31 @@
+﻿{% load staticfiles %}
+<html>
+  <body >
+<head>
+         <!--<link href="{% static 'css/button.css'%}" rel='stylesheet' type='text/css'>-->
+         <style> @import "{% static 'css/button.css'%}"; </style>
+    </head>
+    <a  class='button' id="rr" name="rr" onclick="ff()"> Кнопка </a>
+    <label>
+      <input type='checkbox' id="dd" onchange= "fun1()" > keydown </label>
+    <script src = "{% static 'js/1.js'%">
+
+    script.onload = name()  </script>
+
+    <script>
+    var qqq = document.getElementById('rr');
+    qqq.enabled = false;
+    function fun1() {
+    var ccc = document.getElementById('dd');
+
+    if (ccc.checked) {alert(""); qqq.enabled = true; }}
+    function ff() {
+    if (qqq.enabled==true) {qqq.onclick = document.location.href='https://vk.com';}
+    else qqq.onclick = document.location.href='http://127.0.0.1:8000/ind/';}
+
+     </script>
+
+  </body>
+
+</html>
+<!-- href='http://snipcode.ru'https://vk.com/idmxslava else {document.rr.click=name();}-->
